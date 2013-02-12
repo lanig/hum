@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hurom Slow Juicer</title>
-	<link rel="icon" type="image/ico" href="/images/hurom.ico" />
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>{{ page.title }}</title>
+
+	<link rel="shortcut icon" href="/images/hurom.ico" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 	
 	<meta charset=utf-8 />
-  <title> {% if page.title %} {{ page.title }} | {% endif %} Hurom Slow Juicer </title>
-  <link rel="stylesheet" type="text/css" href="/css/style.css" />
-	
 	<meta name="description" content="Hurom Australia - Exclusive distributors of Hurom Slow Juicers to Australia" />
-	<meta name="keywords" content="Hurom,Hurom Juicer,Slow Juicer,Hurom Slow Juicer,Oscar,Juicepresso,Juicebuddy,Avancer,Coway,HU-300,HU-400,Juice Machine,Juicing Recipes,Juicing,Juice Extractor,Juicer,Electric Juicer,Cold Press Juicer,
-cancer,wellbeing,vitamins,minerals,wheatgrass" />
+	<meta name="keywords" content="Hurom,Hurom Juicer,Slow Juicer,Hurom Slow Juicer,Oscar,Juicepresso,Juicebuddy,Avancer,Coway,HU-300,HU-400,Juice Machine,Juicing Recipes,Juicing,Juice Extractor,Juicer,Electric Juicer,Cold Press Juicer,cancer,wellbeing,vitamins,minerals,wheatgrass" />
 
 	<script type="text/javascript" src="/includes/hover-fix.js"></script>
 </head>
 
 <body>
-<div id="page">
+  <div id="page">
   
-	<div id="header">
-  	{% include banner.html %}
-  	{% include nav.html %}
+  	<div id="header">
+    	{% include banner.html %}
+    	{% include nav.html %}
+    </div>
+  
+  	<div id="content">
+  		{% include facebook.html %}
+		
+  		<h1>{{page.heading}}</h1>
+		
+  		<div class="text-block left-block">
+  		  {{content}}
+  		</div>
+		
+  		{% include footer-images.html %}
+  	</div>
+	
   </div>
-  
-	<div id="content">
-		{% include facebook.html %}
-		
-		{{content}}
-		
-		<img src="/images/orange.png" class="bordered" />
-    <img src="/images/green.png" class="bordered"/>
-    <img src="/images/pink.png" class="bordered" />
-    <img src="/images/milk.png" class="bordered"/>
-    <img src="/images/red.png" class="bordered last"/>
-	</div><!-- end content div -->
-</div>
 </body>
 </html>
