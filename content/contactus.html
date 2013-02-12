@@ -1,0 +1,34 @@
+---
+layout: default
+title: Hurom Slow Juicer - Contact Us
+heading: Contact Us
+---
+
+<div class="content">
+  <form id="contact-form" method="post" action="contactussubmitted.php">
+		<label for="firstname">First Name <span class="mandatory">*</span></label>
+		<input type="text" id="firstname" name="firstname" /><br/>
+
+		<label for="lastname">Last Name <span class="mandatory">*</span></label>
+		<input type="text" id="lastname" name="lastname" /><br/>
+		
+		<label for="email">Email <span class="mandatory">*</span></label>
+		<input type="text" id="email" name="email" /><br/>
+		
+		<label for="phone">Phone</label>
+		<input type="text" id="phone" name="phone" /><br/>
+		
+		<label for="company">Company</label>
+		<input type="text" id="company" name="company" /><br/>
+		
+		<label for="comment">Comment</label>
+		<textarea id="comment" cols="30" rows="5" name="comment"></textarea><br/><br/>
+
+		<input type="submit" value="Submit" class="button "/><br/>
+	</form>			
+	<p><span class="mandatory">*</span> Required field</p>
+
+  {% include slogan.html %}
+</div>
+
+{% include footer-images.html %}	

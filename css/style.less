@@ -2,53 +2,47 @@ body {
 	background-color: #E1E1E1;
 	margin: 0 auto;
 	font-family: arial, sans;
-
 }
 
 *:focus {outline: none;}
 
-div#page {
+/********************** Structural Elements ***************************/
+#page {
 	width: 870px;
 	background: #FFFFFF url('/images/gradient-bg.png') repeat-y left top;
 	margin: 0px auto;
 	text-align: left;
 	overflow: auto;
-}
-
-div#header {
-	border-bottom: solid 1px #C9D96A;
-	overflow: auto;
-	height: 180px;
-	background: url('/images/juicer-top.png') no-repeat right bottom;
-}
-
-div#logo {
-	height: 150px;
-}
-
-div#nav {
-	padding-left: 18px;
-	text-align: center;
-}
-
-div#main {
-	color: #686868;
-	font-size: .8em;
-	padding: 25px 20px 0px 40px;
-	min-height: 370px;
-	background: url('/images/juicer.png') no-repeat right top;
-	position: relative;
-
-}
-
-div.content {
-	background-color: #FFFFFF; 
-	padding: 20px; 
-	border: solid 1px #C9D96A; 
-	margin: 0 340px 30px 0;
-	&.full-width {
-		margin-right: 12px;
-	}
+  #header {
+	  border-bottom: solid 1px #C9D96A;
+	  overflow: auto;
+	  height: 180px;
+	  background: url('/images/juicer-top.png') no-repeat right bottom;
+	  #logo {
+    	height: 150px;
+    }
+    #nav {
+    	padding-left: 18px;
+    	text-align: center;
+    }
+  }
+  #main {
+  	color: #686868;
+  	font-size: .8em;
+  	padding: 25px 20px 0px 40px;
+  	min-height: 370px;
+  	background: url('/images/juicer.png') no-repeat right top;
+  	position: relative;
+    .content {
+    	background-color: #FFFFFF; 
+    	padding: 20px; 
+    	border: solid 1px #C9D96A; 
+    	margin: 0 340px 30px 0;
+    	&.full-width {
+    		margin-right: 12px;
+    	}
+    }
+  }
 }
 
 .clear {
@@ -149,11 +143,7 @@ img.right {
 
 img.recipe-steps {
 	padding-top: 10px;
-}
-
-div.blah {
-	
-}
+} 
 
 .thumbs .thumb {
 	width: 96px;
@@ -242,14 +232,18 @@ p.tip {
 }
 	
 /********************** Forms ***************************/
-label {
-	display: block;
-	float: left;
-	width: 100px;
+
+form {
+	label {
+		display: block;
+		float: left;
+		width: 100px;
+	}
 }
 
+
 input {
-		width: 140px;
+	width: 140px;
 }
 
 input, textarea {
