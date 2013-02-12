@@ -21,16 +21,11 @@
     	{% include nav.html %}
     </div>
   
-  	<div id="content">
+  	<div id="main">
   		{% include facebook.html %}
 		
   		<h1>{{page.heading}}</h1>
-		
-  		<div class="text-block left-block">
-  		  {{content}}
-  		</div>
-		
-  		{% include footer-images.html %}
+  		{{content}}
   	</div>
 	
   </div>

@@ -26,7 +26,7 @@ div#nav {
   padding-left: 18px;
   text-align: center;
 }
-div#content {
+div#main {
   color: #686868;
   font-size: .8em;
   padding: 25px 20px 0px 40px;
@@ -34,14 +34,14 @@ div#content {
   background: url('/images/juicer.png') no-repeat right top;
   position: relative;
 }
-div.text-block {
+div.content {
   background-color: #FFFFFF;
   padding: 20px;
   border: solid 1px #C9D96A;
-  margin: 0 12px 30px 0;
+  margin: 0 340px 30px 0;
 }
-div.left-block {
-  margin-right: 340px;
+div.content.full-width {
+  margin-right: 12px;
 }
 .clear {
   float: none;
@@ -289,6 +289,21 @@ dt {
 dd {
   float: left;
   margin: 0;
+}
+#faq-questions {
+  margin-right: 320px;
+}
+#faq-questions ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+#faq-questions ul li {
+  margin-bottom: 7px;
+}
+#faq-questions a.top {
+  display: block;
+  margin-top: 20px;
 }
 #faq dd,
 #faq dt {
