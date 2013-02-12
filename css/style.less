@@ -246,64 +246,54 @@ table.specs {
 	border-collapse: collapse;
 	margin: 10px 0;
 	border-spacing: 0;
-}
-
-table.specs td, th {
-	border: solid 1px #C9D96A;
-	border-top: solid 1px #C9D96A;
-	padding: 5px;
-	font-size: .9em;
-	text-align: left;
-	vertical-align: top;
-}
-
-table.specs td {
-	text-align: center;
+	td, th {
+  	border: solid 1px #C9D96A;
+  	border-top: solid 1px #C9D96A;
+  	padding: 5px;
+  	font-size: .9em;
+  	text-align: left;
+  	vertical-align: top;
+  }
+  td {
+  	text-align: center;
+  }
 }
 
 table.shop {
 	width: 430px;
-}
-
-table.shop td {
-	padding: 4px;
-}
-table.shop input {
-	width: 40px;
-	height: 18px;
-	margin: 0;
-
-}
-
-table.shop a.calculate {
-	margin: 0;
-}
-
-table.shop .button {
-	width: 50px;
-	height: 22px;
-	border-style: none;
-	line-height: 0;
-	font-size: 0;
-	color: transparent;
-}
-
-table.shop .update {
-	background: url(/images/updateButton.png)  no-repeat left top;
-}
-
-table.shop .apply {
-	background: url(/images/applyButton.png)  no-repeat left top;
-}
-
-table.shop .paypal {
-	width: 106px;
-	height: 26px;
-	border-style: none;
-}
-
-table.shop * {
-	vertical-align: middle;
+	td {
+  	padding: 4px;
+  	input {
+    	width: 40px;
+    	height: 18px;
+    	margin: 0;
+    }
+    a.calculate {
+    	margin: 0;
+    }
+    .paypal {
+    	width: 106px;
+    	height: 26px;
+    	border-style: none;
+    }
+    .button {
+    	width: 50px;
+    	height: 22px;
+    	border-style: none;
+    	line-height: 0;
+    	font-size: 0;
+    	color: transparent;
+    	&.update {
+      	background: url(/images/updateButton.png)  no-repeat left top;
+      }
+      &.apply {
+      	background: url(/images/applyButton.png)  no-repeat left top;
+      }
+    }
+  }
+  * {
+    vertical-align: middle;
+  }
 }
 
 /********************** Lists ********************************/
