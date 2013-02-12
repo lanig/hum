@@ -1,12 +1,10 @@
+/********************** Structural Elements ***************************/
 body {
 	background-color: #E1E1E1;
 	margin: 0 auto;
 	font-family: arial, sans;
 }
 
-*:focus {outline: none;}
-
-/********************** Structural Elements ***************************/
 #page {
 	width: 870px;
 	background: #FFFFFF url('/images/gradient-bg.png') repeat-y left top;
@@ -45,25 +43,6 @@ body {
   }
 }
 
-.clear {
-	float: none;
-	clear: both;
-}
-
-div.slide {
-	 width: 750px;
-}
-
-.testimonial {
-	min-height: 300px;
-}
-
-.facebook {
-	position: absolute; 
-	top: 425px; 
-	right: 20px;
-}
-
 /********************** Headings ***************************/
 h1 {
 	color: #b9455e;
@@ -90,6 +69,30 @@ h4 {
 	color: #b9455e;
 	margin: 0 0 12px 0;
 	font-size: 1.1em;
+}
+
+/********************** Links ***************************/
+a {
+	color: #7FA51A;
+  &:hover {
+	  color: #b9455e;
+  }
+}
+
+
+
+div.slide {
+	 width: 750px;
+}
+
+.testimonial {
+	min-height: 300px;
+}
+
+.facebook {
+	position: absolute; 
+	top: 425px; 
+	right: 20px;
 }
 
 div.slide p {
@@ -170,22 +173,7 @@ img.recipe-steps {
 	margin-bottom: 3px;
 }
 
-/********************** Links ***************************/
-a {
-	color: #7FA51A;
-}
 
-a:hover {
-	color: #b9455e;
-}
-
-a.announcement {
-	display: block;
-/*	text-align: center;*/
-	font-weight: bold;
-	color: #b9455e;
-	clear: both;
-}
 
 
 
@@ -232,31 +220,25 @@ p.tip {
 }
 	
 /********************** Forms ***************************/
-
 form {
 	label {
 		display: block;
 		float: left;
 		width: 100px;
 	}
-}
-
-
-input {
-	width: 140px;
-}
-
-input, textarea {
-	margin-bottom: 15px;
-	border: solid 1px #686868;
-}
-
-.mandatory {
-	color: #b9455e;
-}
-
-input.button {
-	padding: 5px 20px;
+	input {
+  	width: 140px;
+  	.button {
+    	padding: 5px 20px;
+    }
+  }
+  input, textarea {
+  	margin-bottom: 15px;
+  	border: solid 1px #686868;
+  }
+  .mandatory {
+  	color: #b9455e;
+  }
 }
 
 /********************** Tables ***************************/
@@ -420,3 +402,11 @@ a.faq {margin-left: 20px;}
   	background-color: #FFFFFF;	
   }
 } 
+
+/********************** Hacks ***************************/
+*:focus {outline: none;}
+
+.clear {
+	float: none;
+	clear: both;
+}
